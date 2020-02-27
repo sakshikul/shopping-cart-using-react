@@ -1,12 +1,11 @@
-import React from "react";
+import React, { Component } from 'react'
 
-function NavBar(props) {
-  console.log(props);
-  return (
-    <div>
-      <h1>Navbar: {props.data} </h1>
-    </div>
-  );
+export default class Navbar extends Component {
+    render() {
+        return (
+            <div>
+                <h1>Nav:{this.props.counters}</h1>
+            </div>
+        )
+    }
 }
-
-export default NavBar;
